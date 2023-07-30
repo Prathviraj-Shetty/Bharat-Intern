@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div id="content-container">
+        <h2 id="container-heading">Temperature Converter</h2>
+        <div id="calculations-container">
+            <div class="content-division">
+                <div class="division-heading">From</div>
+                <div class="inputs-container">
+                    <div class="dropdown-container">
+                        <select class="dropdown inputs" id="input-dropdown">
+                            <option value="Celcius" selected>Celcius</option>
+                            <option value="Farenheit">Farenheit</option>
+                            <option value="Kelvin">Kelvin</option>
+                        </select>
+                    </div>
+                    <input type="number" class="input-field inputs" name="input" id="input-box" placeholder="0"
+                        required />
+                </div>
+            </div>
+            <div class="content-division">
+                <div class="division-heading">To</div>
+                <div class="inputs-container">
+                    <div class="dropdown-container">
+                        <select class="dropdown inputs" id="result-dropdown">
+                            <option value="Farenheit" selected>Farenheit</option>
+                            <option value="Celcius">Celcius</option>
+                            <option value="Kelvin">Kelvin</option>
+                        </select>
+                    </div>
+                    <input type="text" class="input-field inputs" name="result" id="result-box" placeholder="="
+                        style="cursor: no-drop;" readonly />
+                </div>
+            </div>
+            <button id="convert-btn" class="inputs" onclick="converter()">
+                Convert
+            </button>
+        </div>
+    </div>
+    <script src="./scripts.js"></script>
+</body>
+
+</html>
